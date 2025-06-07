@@ -12,7 +12,7 @@
             $password= "staticvoid";
             $database= "final";
      ?>
-    <form action="https://www.google.com/search?q='.$search'" method="get">
+    <form action="newpage.php" method="get">
    
   <!-- <form method="get" action="https://www.google.com/search?q="> -->
     <!--<form method="get"> --> 
@@ -36,7 +36,7 @@
 <?php
         $conn = mysqli_connect($server, $username, $password, $database);  
         $ID1=11;
-        $sql = "INSERT INTO googlesearches (id, search, ip) VALUES('$search','$search', '$ip');";
+        $sql = "INSERT INTO googlesearches (id, search, ip) VALUES('$ID1', '$search', '$ip');";
 
         if (mysqli_query($conn,$sql)) {
 
